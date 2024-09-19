@@ -277,7 +277,7 @@ main #headlinetextvertical {
 .product-info {
 	width: 100%;
 	max-width: 400px;
-	margin: 3rem auto;
+	margin: 1rem auto;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
