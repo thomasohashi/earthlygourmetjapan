@@ -1,0 +1,329 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+hr {
+	width: calc(100% - 4em);
+	max-width: 800px;
+	margin: 1.5em auto;
+	border: 0.5px solid;
+	color: darkgreen;
+}
+
+header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	margin: 0 auto;
+	font-family: "DM Sans", system-ui;
+	background: rgb(255, 255, 255);
+/*	
+	-webkit-backdrop-filter: blur(0.5em);
+	backdrop-filter: blur(0.5em);
+*/
+	padding: 0.5rem 1rem;
+	z-index: 1000;
+}
+
+header ul {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 0.5rem;
+}
+
+header ul li {
+	margin: 0;
+	font-size: 1.3rem;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+}
+
+header ul li a {
+	text-decoration: none;
+}
+
+.logo {
+	display: flex;
+	transition: all .2s ease-in-out;
+}
+
+header ul li a.logo img {
+	height: 3em;
+}
+
+header ul li a.logo:hover {
+	transform: scale(1.1);
+}
+
+header ul li.push_right {
+	margin-left: auto;
+}
+
+header ul li a:not(.logo, .contact) {
+	padding: 0.75rem;
+	color: darkgreen;
+	border-radius: .5em;
+	transition: all .2s ease-in-out;
+}
+
+header ul li a:not(.logo, .contact):hover {
+	background: darkgreen;
+	color: white;
+}
+
+header ul li a.contact {
+	padding: 0.75rem;
+	border-radius: 0.5em;
+	background: forestgreen;
+	color: white;
+}
+
+header ul li a.contact:hover {
+	transform: scale(1.1);
+	background: rgb(4, 82, 45);
+}
+
+@media only screen and (max-width: 700px) {
+	header ul li:nth-child(4) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header ul li:nth-child(3) {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	header ul li:nth-child(2) {
+		display: none;
+	}
+	.logo {
+		min-width: 120px;
+		padding-right: 1rem;
+	}
+	.contact {
+		font-size: 1.2rem;
+		padding: 0.5rem;
+	}
+}
+
+headr ul li a:hover {
+	cursor: pointer;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	font-family: "Noto Sans JP", sans-serif, system-ui;
+	font-size: 1rem;
+	color: rgb(4, 82, 45);
+	font-size: 1.2rem;
+}
+
+main h1 {
+	font-family: "DM Sans", sans-serif, system-ui;
+	font-size: 3rem;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+main h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	font-family: "DM Sans", sans-serif, system-ui;
+}
+
+main h3 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family: "DM Sans", sans-serif, system-ui;
+}
+
+.producer-info {
+	font-size: 1.5rem;
+	font-family: "DM Sans", sans-serif, system-ui;
+	font-weight: 500;
+}
+
+.product-name {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.caption {
+	font-size: 1rem;
+	font-weight: bold;
+	color: forestgreen;
+}
+
+.jp-text {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+main .headline {
+	background: rgb(211, 227, 203);
+	text-align: center;
+	justify-content: center;
+
+}
+
+main #headlineimage {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 2rem 1rem 0 1rem;
+}
+
+main #headlinetext {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+main #headlinetextvertical {
+	display: none;
+	max-width: 320px;
+	margin: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+	main #headlinetext {
+		display: none;
+	}
+	main #headlinetextvertical {
+		display: inline-block;
+	}
+}
+
+.category {
+	background: rgb(211, 227, 203);
+	text-align: center;
+	justify-content: center;
+	padding: 0 2rem;
+}
+
+.content {
+	max-width: 960px;
+	margin: auto;
+	padding: 3rem 2rem;
+	background: white;
+	color: rgb(4, 82, 45);
+}
+
+.product-info {
+	width: 100%;
+	max-width: 400px;
+	margin: 3rem auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.product-photo {
+	display: flex;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 30px;
+	border: 1px solid darkgreen;
+	margin: 2rem auto;
+	transition: all .2s ease-in-out;
+}
+
+.product-photo:hover {
+	box-shadow: 0 0 15px 3px rgb(186, 207, 186);
+	transform: scale(1.01);
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5%;
+	padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+}
+
+footer {
+	font-size: 1.2rem;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+	color: rgb(4, 82, 45);
+	font-family: system-ui;
+}
+
+footer img {
+	display: flex;
+	width: 120px;
+	margin: 0 auto;
+}
