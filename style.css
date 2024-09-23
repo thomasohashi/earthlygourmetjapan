@@ -379,3 +379,12 @@ footer img {
 	color: white;
 	scale: 1.1;
 }
+
+#eg-usa {
+	text-decoration: none;
+	color: darkgreen;
+}
+
+#eg-usa:hover {
+	text-decoration: underline;
+}
