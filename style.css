@@ -121,7 +121,11 @@ header ul li.push_right {
 header ul li a:not(.logo, .contact) {
 	padding: 0.75rem;
 	color: darkgreen;
+<<<<<<< HEAD
 	border-radius: 1em;
+=======
+	border-radius: .5em;
+>>>>>>> main
 }
 
 header ul li a:not(.logo, .contact):hover {
@@ -333,7 +337,10 @@ footer img {
 .secondary-nav {
 	width: 100%;
 	font-weight: 700;
+<<<<<<< HEAD
 	font-size: 1rem;
+=======
+>>>>>>> main
 }
 
 .secondary-nav ul {
@@ -354,8 +361,13 @@ footer img {
 .secondary-nav ul a {
 	text-decoration: none;
 	color: darkgreen;
+<<<<<<< HEAD
 	padding: 0.5rem 1rem;
 	border-radius: 1em;
+=======
+	padding: 0.75rem 1rem;
+	border-radius: 1rem;
+>>>>>>> main
 	transition: all .2s ease-in-out;
 }
 
