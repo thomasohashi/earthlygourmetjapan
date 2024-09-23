@@ -263,6 +263,7 @@ main h3 {
 	max-width: 960px;
 	margin: auto;
 	padding: 3rem 2rem;
+<<<<<<< HEAD
 }
 
 .content-grid {
@@ -276,6 +277,8 @@ main h3 {
 	padding: 1rem;
 	margin: 1rem;
 	display: flex;
+=======
+>>>>>>> main
 }
 
 .product-info {
